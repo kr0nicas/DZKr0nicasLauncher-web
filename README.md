@@ -1,0 +1,9 @@
+# DZKr0nicasLauncher: la página
+
+La página para jugadores de DZKr0nicasLauncher, un launcher de DayZ para Windows hecho por un jugador. Al elegir un servidor, prepara los mods que ese servidor pide en ese momento y, si algo falla, explica por qué con palabras.
+
+Es un solo `index.html`, con las capturas dentro, que se sirve con GitHub Pages. No lleva analítica, ni formularios, ni scripts de fuera. Solo las fuentes de Google Fonts.
+
+Las capturas son del launcher real, recortadas para quitar los datos personales. El informe de Sesiones es un ejemplo, montado a partir de un fallo real.
+
+Proyecto independiente. No está afiliado a Bohemia Interactive ni a Valve. DayZ y Steam son marcas de sus dueños.
