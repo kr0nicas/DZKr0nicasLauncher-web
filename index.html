@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="DZKr0nicasLauncher">
-<meta property="og:description" content="Eliges servidor y entras con los mods que ese servidor pide hoy. Si algo falla, te dice por qué, en español claro. Beta cerrada para Windows.">
+<meta property="og:description" content="Eliges servidor y entras con los mods que ese servidor pide hoy. Si algo falla, te dice por qué, en español claro. Beta gratis para Windows.">
 <meta name="theme-color" content="#0a0c0b">
 <title>DZKr0nicasLauncher</title>
 <meta name="description" content="Un launcher de DayZ para Windows hecho por un jugador: entras con los mods que el servidor pide hoy y, si algo falla, te dice por qué.">
@@ -234,8 +234,8 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
         <p class="etiqueta">Launcher para DayZ · Windows</p>
         <h1 id="t-portada">Eliges servidor y entras con los mods que ese servidor pide hoy.</h1>
         <p class="entrada">Si algo falla, te dice por qué, en español claro.</p>
-        <a class="boton" id="boton-discord" href="#descargar">Pedir acceso en Discord</a>
-        <p class="datos">Beta cerrada · Windows 10/11 · gratis</p>
+        <a class="boton" href="#descargar">Descargar la beta</a>
+        <p class="datos">Beta · Windows 10/11 · gratis</p>
       </div>
       <figure>
         <button class="ventana" type="button" data-ampliar aria-label="Ampliar la captura de la lista con la ficha">
@@ -354,8 +354,8 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
 
   <section class="beta" aria-label="Estado de la beta">
     <div class="envoltura">
-      <strong>Beta cerrada</strong>
-      <p>Lo hemos probado con servidores reales, y nos faltan jugadores que lo pongan a prueba. Si algo falla, el informe te dice qué pasó y puedes copiarlo para contarlo en el canal.</p>
+      <strong>Es una beta</strong>
+      <p>Lo hemos probado con servidores reales, y nos faltan jugadores que lo pongan a prueba. Si algo falla, el informe te dice qué pasó y puedes copiarlo para contarlo.</p>
     </div>
   </section>
 
@@ -363,8 +363,11 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
     <div class="envoltura">
       <div class="texto">
         <p class="etiqueta">Descargar</p>
-        <h2 id="t-descargar">Por Discord, versión a versión</h2>
-        <p id="texto-discord">Las versiones se reparten en el canal de la beta, cada una con su suma SHA-256. Pide la invitación a quien te pasó esta página.</p>
+        <h2 id="t-descargar">Descarga la beta</h2>
+        <p>Las versiones están en una carpeta de MEGA, cada una con su archivo de sumas, <code>SHA256SUMS.txt</code>. Baja el instalador, <code>DZKr0nicasLauncher-Setup-…-win-x64.exe</code>, de la versión más nueva.</p>
+        <p><a class="boton" href="https://mega.nz/folder/W0JxVAhB#48EXjjT7zJ1z4F_9ivW-eA" target="_blank" rel="noopener noreferrer">Abrir la carpeta de descarga</a></p>
+        <p class="pista">Se abre en mega.nz, un servicio aparte de esta página.</p>
+        <p id="texto-discord" hidden></p>
         <dl class="requisitos">
           <dt>Sistema</dt><dd>Windows 10 u 11, 64 bits</dd>
           <dt>Necesitas</dt><dd>Steam abierto, con DayZ instalado</dd>
@@ -375,12 +378,12 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
         <h3 id="t-aviso">Windows te avisará al instalarlo</h3>
         <p>El launcher aún no está firmado, así que Windows y algunos antivirus no lo conocen. Ese aviso no dice qué hace el programa, solo que es nuevo.</p>
         <ol>
-          <li>Instala solo el archivo que llegó por el canal de la beta.</li>
-          <li>Comprueba que su suma SHA-256 es la del mensaje. La suma demuestra que la descarga está entera, no quién la hizo.</li>
-          <li>No apagues Smart App Control ni añadas excepciones al antivirus por él. Si tu equipo no te deja instalarlo, dilo en el canal.</li>
+          <li>Instala solo el instalador que bajaste de la carpeta enlazada en esta página.</li>
+          <li>Comprueba que su suma SHA-256 es la que pone <code>SHA256SUMS.txt</code>. La suma demuestra que la descarga está entera, no quién la hizo.</li>
+          <li>No apagues Smart App Control ni añadas excepciones al antivirus por él. Si tu equipo no te deja instalarlo, no lo fuerces.</li>
         </ol>
         <div class="comando">
-          <pre id="cmd-suma">Get-FileHash .\DZKr0nicasLauncher-Setup-0.5.0-beta.8-win-x64.exe -Algorithm SHA256</pre>
+          <pre id="cmd-suma">Get-FileHash .\DZKr0nicasLauncher-Setup-*.exe -Algorithm SHA256</pre>
           <button type="button" id="copiar-suma">Copiar</button>
         </div>
         <p class="pista" style="color:var(--texto-2)">En PowerShell, en la carpeta donde lo descargaste.</p>
@@ -402,13 +405,12 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
 </dialog>
 
 <script>
-  // La invitación de Discord, cuando el autor la dé. Vacía, el botón baja a «Descargar».
+  // La invitación de Discord, para pedir ayuda, cuando el autor la dé. Vacía, no sale.
   const DISCORD_URL = '';
   if (DISCORD_URL) {
-    const b = document.getElementById('boton-discord');
-    b.href = DISCORD_URL; b.target = '_blank'; b.rel = 'noopener noreferrer';
-    document.getElementById('texto-discord').innerHTML =
-      'Las versiones se reparten en el canal de la beta, cada una con su suma SHA-256. <a href="' + DISCORD_URL + '" target="_blank" rel="noopener noreferrer">Entra en el Discord</a> y pide acceso.';
+    const t = document.getElementById('texto-discord');
+    t.innerHTML = '¿Dudas o un fallo? <a href="' + DISCORD_URL + '" target="_blank" rel="noopener noreferrer">Cuéntalo en el Discord</a>.';
+    t.hidden = false;
   }
 
   const dlg = document.getElementById('ampliada');
