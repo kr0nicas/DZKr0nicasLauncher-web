@@ -7,3 +7,5 @@ Es un `index.html` con sus capturas en `img/`, que se sirve con GitHub Pages. No
 Las capturas son del launcher real, recortadas para quitar los datos personales. El informe de Sesiones es un ejemplo, montado a partir de un fallo real, en una versión anterior del launcher.
 
 Proyecto independiente. No está afiliado a Bohemia Interactive ni a Valve. DayZ y Steam son marcas de sus dueños.
+
+Las versiones para descargar son las [releases de este repositorio](https://github.com/kr0nicas/DZKr0nicasLauncher-web/releases): instalador, zip y `SHA256SUMS.txt`. Son betas sin firma. El código del launcher está en otro repositorio, privado.
