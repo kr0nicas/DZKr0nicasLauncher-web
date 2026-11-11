@@ -24,6 +24,8 @@
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://kr0nicas.github.io/DZKr0nicasLauncher-web/">Ver la página</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/kr0nicas/DZKr0nicasLauncher-web/discussions">Dudas e ideas</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="#english">English</a>
 </h3>
 
@@ -106,7 +108,7 @@
 **Necesitas:** Windows 10 u 11 de 64 bits, y Steam abierto con DayZ instalado.
 
 > [!NOTE]
-> **Es una beta.** Está probada con servidores reales y le faltan jugadores que la pongan a prueba. Si algo falla, el informe de Sesiones te dice qué pasó y puedes copiarlo para contarlo.
+> **Es una beta.** Está probada con servidores reales y le faltan jugadores que la pongan a prueba. Si algo falla, el informe de Sesiones te dice qué pasó y puedes copiarlo para contarlo en [Dudas, ideas y fallos](https://github.com/kr0nicas/DZKr0nicasLauncher-web/discussions).
 
 ---
 
@@ -120,7 +122,7 @@
 - **Explore:** a local server just for you, with free camera, god mode and teleport.
 - **It never touches** BattlEye, the game's memory, or the game and mod folders, and it sends nothing on its own.
 
-English is a beta language: set it in **Settings › Appearance › Language**. [Download the latest version](https://github.com/kr0nicas/DZKr0nicasLauncher-web/releases/latest). It is unsigned for now, so Windows will warn you when installing.
+Questions or bugs: [Discussions](https://github.com/kr0nicas/DZKr0nicasLauncher-web/discussions). English is a beta language: set it in **Settings › Appearance › Language**. [Download the latest version](https://github.com/kr0nicas/DZKr0nicasLauncher-web/releases/latest). It is unsigned for now, so Windows will warn you when installing.
 
 ---
 
