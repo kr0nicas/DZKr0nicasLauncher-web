@@ -102,6 +102,9 @@
 
 3. Ejecútalo. Si ya tenías una versión, va encima y tus datos se quedan.
 
+> [!TIP]
+> **Desde la 0.5.0-beta.10 se actualiza con un clic.** Si tienes la beta.9 o una anterior, instala esta a mano una última vez. Desde aquí, las versiones nuevas salen en una tarjeta abajo a la derecha del launcher: «Actualizar» la baja, comprueba que la firmó el autor y se vuelve a abrir ya actualizado.
+
 > [!WARNING]
 > **Windows te avisará al instalarlo.** El launcher aún no está firmado, así que Windows y algunos antivirus no lo conocen: «Más información» → «Ejecutar de todas formas». El aviso no dice qué hace el programa, solo que es nuevo. **No apagues Smart App Control ni añadas excepciones al antivirus por él;** si tu equipo no te deja instalarlo, no lo fuerces.
 

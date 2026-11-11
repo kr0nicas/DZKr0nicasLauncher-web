@@ -330,6 +330,9 @@ section.bloque.al-reves .texto { order: 2; }
 .requisitos dt { color: var(--texto-3); font-family: var(--f-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; padding-top: 3px; }
 .requisitos dd { margin: 0; color: var(--texto); }
 .pista { font-size: 14px; color: var(--texto-3); }
+.novedad { margin: 18px 0 4px; padding: 14px 16px; border: 1px solid var(--marca); border-left-width: 4px; background: color-mix(in srgb, var(--marca) 10%, transparent); }
+.novedad strong { display: block; margin-bottom: 6px; color: var(--marca); font-size: 16px; }
+.novedad p { margin: 0; font-size: 15px; }
 .aviso-win { background: var(--aviso-fondo); border: 1px solid var(--aviso-borde); padding: 26px; min-width: 0; display: grid; gap: 14px; }
 .aviso-win h3 { font-family: var(--f-titulo); font-size: 30px; line-height: 1; text-transform: uppercase; color: var(--aviso); font-weight: 600; }
 .aviso-win p { color: var(--texto); font-size: 15px; }
@@ -399,7 +402,7 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
   <section class="portada" aria-labelledby="t-portada">
     <div class="envoltura">
       <div class="texto" style="max-width:none;gap:0">
-        <a class="version" href="#descargar"><i aria-hidden="true"></i><span><b>0.5.0-beta.9</b> · nueva cabina, nuevos filtros</span></a>
+        <a class="version" href="#descargar"><i aria-hidden="true"></i><span><b>0.5.0-beta.10</b> · se actualiza con un clic</span></a>
         <h1 id="t-portada"><span>Eliges servidor.</span><span><em>Entras.</em></span></h1>
         <p class="entrada">Un launcher de DayZ para Windows que <strong>le pregunta al servidor qué mods pide hoy</strong>, los deja listos y arranca el juego ya conectado. Si algo falla, te dice por qué.</p>
         <div class="acciones">
@@ -605,18 +608,22 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
   <section class="descargar" id="descargar" aria-labelledby="t-descargar">
     <div class="envoltura">
       <div class="texto">
-        <p class="etiqueta">Descargar · 0.5.0-beta.9</p>
+        <p class="etiqueta">Descargar · 0.5.0-beta.10</p>
         <h2 id="t-descargar">Descarga <em>la beta</em></h2>
-        <p>El botón baja el instalador de la versión más nueva, <code>DZKr0nicasLauncher-Setup-0.5.0-beta.9-win-x64.exe</code>, desde GitHub. En la página de la versión están también el zip portable y el archivo de sumas, <code>SHA256SUMS.txt</code>.</p>
+        <p>El botón baja el instalador de la versión más nueva, <code>DZKr0nicasLauncher-Setup-0.5.0-beta.10-win-x64.exe</code>, desde GitHub. En la página de la versión están también el zip portable y el archivo de sumas, <code>SHA256SUMS.txt</code>.</p>
+        <div class="novedad" role="note">
+          <strong>Desde la 0.5.0-beta.10, se actualiza con un clic</strong>
+          <p>Si tienes la beta.9 o una anterior, instala esta <b>a mano una última vez</b>, encima de la tuya: tu lista y tus sesiones se quedan. Desde aquí, cuando salga una versión nueva, te lo dirá una tarjeta abajo a la derecha: pulsas «Actualizar», comprueba que la firmó el autor, se cierra y se vuelve a abrir ya actualizado. Es opcional: «Antes de empezar» te pregunta si quieres que busque versiones nuevas.</p>
+        </div>
         <div class="acciones">
-          <a class="boton" href="https://github.com/kr0nicas/DZKr0nicasLauncher-web/releases/download/v0.5.0-beta.9/DZKr0nicasLauncher-Setup-0.5.0-beta.9-win-x64.exe" rel="noopener noreferrer"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v10m0 0l-4-4m4 4l4-4M3 15v3h14v-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>Descargar el instalador</a>
-          <a class="enlace-linea" href="https://github.com/kr0nicas/DZKr0nicasLauncher-web/releases/tag/v0.5.0-beta.9" target="_blank" rel="noopener noreferrer">Ver la versión y el zip</a>
+          <a class="boton" href="https://github.com/kr0nicas/DZKr0nicasLauncher-web/releases/download/v0.5.0-beta.10/DZKr0nicasLauncher-Setup-0.5.0-beta.10-win-x64.exe" rel="noopener noreferrer"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v10m0 0l-4-4m4 4l4-4M3 15v3h14v-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>Descargar el instalador</a>
+          <a class="enlace-linea" href="https://github.com/kr0nicas/DZKr0nicasLauncher-web/releases/tag/v0.5.0-beta.10" target="_blank" rel="noopener noreferrer">Ver la versión y el zip</a>
         </div>
         <p class="pista">113 MB, desde github.com. Si GitHub no te va, hay una copia en <a href="https://mega.nz/folder/W0JxVAhB#48EXjjT7zJ1z4F_9ivW-eA" target="_blank" rel="noopener noreferrer">la carpeta de MEGA</a>.</p>
         <div class="suma">
-          <div class="rotulo"><span>SHA-256 del instalador</span><span>0.5.0-beta.9</span></div>
+          <div class="rotulo"><span>SHA-256 del instalador</span><span>0.5.0-beta.10</span></div>
           <div class="fila">
-            <pre id="suma-instalador">b4df300e5446bc8a9f1d1bb2265f1154a2fb3c0997151247db8f1000b8d44752</pre>
+            <pre id="suma-instalador">1580dc239eacfc1f723496b299f3e9460b5105d41551019d4e83ff03582f3e86</pre>
             <button type="button" data-copiar="suma-instalador">Copiar</button>
           </div>
         </div>
@@ -626,7 +633,7 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
           <dt>Sistema</dt><dd>Windows 10 u 11, 64 bits</dd>
           <dt>Necesitas</dt><dd>Steam abierto, con DayZ instalado</dd>
           <dt>Idiomas</dt><dd>Español y English (beta)</dd>
-          <dt>Versión</dt><dd class="mono">0.5.0-beta.9</dd>
+          <dt>Versión</dt><dd class="mono">0.5.0-beta.10</dd>
         </dl>
       </div>
       <div class="aviso-win" role="note" aria-labelledby="t-aviso">
@@ -649,7 +656,7 @@ dialog.ampliada button { background: var(--superficie-2); color: var(--texto); b
 
 <footer>
   <div class="envoltura">
-    <p>DZKr0nicasLauncher 0.5.0-beta.9 · noviembre de 2026 · hecho por Kr0nicas, un jugador. Las capturas son del launcher real, recortadas para quitar datos personales.</p>
+    <p>DZKr0nicasLauncher 0.5.0-beta.10 · noviembre de 2026 · hecho por Kr0nicas, un jugador. Las capturas son del launcher real, recortadas para quitar datos personales.</p>
     <p>Proyecto independiente. No está afiliado a Bohemia Interactive ni a Valve. DayZ y Steam son marcas de sus dueños.</p>
   </div>
 </footer>
